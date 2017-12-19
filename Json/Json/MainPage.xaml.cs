@@ -156,7 +156,7 @@ namespace Json
 
                 layout.Children.Add(new Label { Text = $"出版社: { book.publisherName }" });
             */};
-            layout.Children.Add(new Label { Text = $"タイトル：" + List1[0]});
+            //layout.Children.Add(new Label { Text = $"タイトル：" + List1[0]});
             layout.Children.Add(new Label { Text = "読み取り終了",TextColor = Color.Black });
 
             layout.Children.Add(new Label { Text = "JSON形式で書き出す", TextColor = Color.Red });

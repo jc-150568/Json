@@ -140,12 +140,13 @@ namespace Json
 
             var books = deserialize.Items;
 
-            layout.Children.Add(new Label { Text = $"タイトル: { books }" });
+            var List1 = new List<String>();
+
+            //layout.Children.Add(new Label { Text = $"タイトル: { books }" });
 
             foreach (var book in books)
             {
-                String[] God = new String[1];
-                God[0] = book.title.ToString();
+                List1.Add(book.title);
                 /*
                 layout.Children.Add(new Label { Text = $"タイトル: { book.title }" });
 
@@ -155,8 +156,7 @@ namespace Json
 
                 layout.Children.Add(new Label { Text = $"出版社: { book.publisherName }" });
             */};
-            layout.Children.Add(new Label { Text = $"タイトル: { God[0] }" });
-            //layout.Children.Add(new Label { Text = $"出版社: { God[1] }" });
+            layout.Children.Add(new Label { Text = $"タイトル：" + List1[0]});
             layout.Children.Add(new Label { Text = "読み取り終了",TextColor = Color.Black });
 
             layout.Children.Add(new Label { Text = "JSON形式で書き出す", TextColor = Color.Red });

@@ -144,7 +144,8 @@ namespace Json
 
             foreach (var book in books)
             {
-                String[] God = {book.title,book.author };
+                String[] God = new String[1];
+                God[0] = book.title.ToString();
                 /*
                 layout.Children.Add(new Label { Text = $"タイトル: { book.title }" });
 
@@ -155,7 +156,7 @@ namespace Json
                 layout.Children.Add(new Label { Text = $"出版社: { book.publisherName }" });
             */};
             layout.Children.Add(new Label { Text = $"タイトル: { God[0] }" });
-            layout.Children.Add(new Label { Text = $"出版社: { God[1] }" });
+            //layout.Children.Add(new Label { Text = $"出版社: { God[1] }" });
             layout.Children.Add(new Label { Text = "読み取り終了",TextColor = Color.Black });
 
             layout.Children.Add(new Label { Text = "JSON形式で書き出す", TextColor = Color.Red });

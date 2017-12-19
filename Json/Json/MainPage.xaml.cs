@@ -144,10 +144,10 @@ namespace Json
 
             //layout.Children.Add(new Label { Text = $"タイトル: { books }" });
 
-            foreach (var book in books)
+            /*foreach (var book in books)
             {
                 List1.Add(book.title);
-                /*
+                
                 layout.Children.Add(new Label { Text = $"タイトル: { book.title }" });
 
                 //layout.Children.Add(new Label { Text = $"タイトルカナ: { book.titleKana }" });
@@ -155,15 +155,8 @@ namespace Json
                 layout.Children.Add(new Label { Text = $"著者名: { book.author }" });
 
                 layout.Children.Add(new Label { Text = $"出版社: { book.publisherName }" });
-            */};
-            if (List1[0] is null)
-            {
-                layout.Children.Add(new Label { Text = $"タイトル：" + List1[0] });
-            }
-            else
-            {
-                layout.Children.Add(new Label { Text = "ぬるぬるぬーるぬるー" });
-            }
+            };*/
+            layout.Children.Add(new Label { Text = $"タイトル：" + List1[0]});
             layout.Children.Add(new Label { Text = "読み取り終了",TextColor = Color.Black });
 
             layout.Children.Add(new Label { Text = "JSON形式で書き出す", TextColor = Color.Red });
